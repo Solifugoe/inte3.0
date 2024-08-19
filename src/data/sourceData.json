@@ -1,0 +1,14 @@
+[
+  {
+    "sentimiento": "Felicidad",
+    "veces": 32
+  },
+  {
+    "sentimiento": "Tristeza",
+    "veces": 45
+  },
+  {
+    "sentimiento": "Depresivo",
+    "veces": 23
+  }
+]

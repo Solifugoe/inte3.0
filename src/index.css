@@ -1,0 +1,209 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(41, 37, 37, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../src/assets/images/fondo.jpg');
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-attachment: fixed;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ffffff;
+}
+
+body {
+  margin: 100px 0 0 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #a0e1eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 3px 5px rgba(84, 106, 153, 0.5);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-links a {
+  background-color:rgba(8, 125, 146, 0.699);
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+ 
+.navbar-links a:hover {
+  background-color: #0439a3;
+}
+
+.navbar-signin, .navbar-signup {
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar-signin:hover, .navbar-signup:hover {
+  background-color: white;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-username {
+  margin-right: 15px;
+  background-color: #e87d1e;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: black;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.navbar-signouting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:rgba(8, 125, 146, 0.699);
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+ 
+.navbar-signouting:hover {
+  background-color: #0439a3;
+}
+
+.navbar-signout {
+  background-color: #fc0000;
+  color: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  background-color: #242424;
+  padding: 20px;
+}
+
+.navbar-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.navbar-user.desktop {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.navbar-signout {
+  background-color: rgba(8, 125, 146, 0.699);
+  color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    background-color: #85b8d3;
+    padding: 20px;
+  }
+
+  .navbar-user.desktop {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
